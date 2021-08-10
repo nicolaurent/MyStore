@@ -10,7 +10,9 @@ export class ProductListService {
 
   constructor(private http: HttpClient) { }
 
+  /*
   getProductList(): Observable<[]> {
     return this.http.get(datajson);
   }
+  */
 }
