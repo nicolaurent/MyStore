@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Observable } from 'rxjs';
-import datajson from '../../assets/data.json';
+// import { Observable } from 'rxjs';
+// import datajson from '../../assets/data.json';
 
 @Injectable({
   providedIn: 'root'
