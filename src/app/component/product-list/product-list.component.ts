@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { ProductListService, dataJson } from 'src/app/services/product-list.service';
+import { ProductListService } from 'src/app/services/product-list.service';
+import { product } from 'src/app/model/product';
 
 
 @Component({
@@ -8,8 +9,8 @@ import { ProductListService, dataJson } from 'src/app/services/product-list.serv
   styleUrls: ['./product-list.component.css']
 })
 export class ProductListComponent implements OnInit {
-  productList: dataJson[] = []
-
+  productList: product[] = []
+  
   constructor(private productListService: ProductListService) { }
 
   ngOnInit(): void {
@@ -19,5 +20,7 @@ export class ProductListComponent implements OnInit {
 
     
   }
+
+  
 
 }

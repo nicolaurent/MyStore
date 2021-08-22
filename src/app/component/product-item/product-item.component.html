@@ -1,1 +1,18 @@
-<p>product-item works!</p>
+<div >
+    <div class="product-container">
+        <a [routerLink]="['productDetail', product.name]" (click)="setSelectedItem(product)"><img class="product-index" src={{product.url}}></a>
+        {{product.name}}
+        <br>
+        ${{product.price}}
+        <br>
+        <form (ngSubmit)="addToCart(product)">
+            <select class="select-input" name="selectedQuantity" [(ngModel)]="selectedQuantity">
+                <option *ngFor="let quantity of quantityList" [ngValue]="quantity">{{quantity}}</option>
+            </select>
+            <br>
+            <button class="btn btn-primary" type="submit">
+                Add to Cart
+            </button>
+        </form>
+    </div>
+</div>

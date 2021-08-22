@@ -1,3 +1,2 @@
-<div class="product-container" *ngFor="let product of productList">
-    <img class="product-index" src={{product.url}}>
-</div>
+<app-product-item *ngFor="let product of productList" [product]="product"></app-product-item>    
+
