@@ -20,7 +20,7 @@ export class ProductItemDetailComponent implements OnInit {
   }
 
   addToCart(product: product): void{
-    // this.cartService.addCart(product.id, selectedQuantity);
+    this.cartService.addCart(product.id, this.selectedQuantity);
     // alert(`Quantity: ${this.selectedQuantity}`);
     alert(`${product.name} added to cart`);
   }

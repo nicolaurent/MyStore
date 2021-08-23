@@ -8,12 +8,15 @@ import { product } from '../model/product';
   providedIn: 'root'
 })
 export class ProductListService {
+  productList: Observable<[]>;
+  
     constructor(private http: HttpClient) { 
+      this.productList = this.http.get<[]>('../../assets/data.json');
   }
 
 
   getProductList():Observable<[]>{
-    return this.http.get<[]>('../../assets/data.json');
+    return this.productList;
   }
 
 
