@@ -5,7 +5,8 @@ img {
   
   .select-input {
     width: 108px; 
-    margin-bottom: 8px;
+    margin-top: 1.2rem;
+    margin-bottom: 1.2rem;
   }
   
   .detail-container {
@@ -18,8 +19,19 @@ img {
   .detail-item {
     margin-left: 128px;
     margin-right: 128px;
+    font-size: 1.3rem;
   }
   
   .back-link {
-    margin-top: 8px;
+    margin-top: 1.8rem;
+  }
+
+  .detail-title{
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+
+  .detail-space{
+    margin-top: 1.1rem;
+    margin-bottom: 1.1rem;
   }
