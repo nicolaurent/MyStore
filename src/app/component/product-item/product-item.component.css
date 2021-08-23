@@ -12,10 +12,19 @@
     flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: flex-start;   
   }
   
   .select-input {
     width: 108px; 
     margin-bottom: 8px;
   }
+
+.product-item{
+  margin: 2rem;
+  margin-left: 200px;
+}
+
+.product-info{
+  margin-bottom:10px;
+}
