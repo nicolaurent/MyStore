@@ -1,10 +1,21 @@
 # MyStore
 
+This application is able to support online store frontend, such as browsing for products, show product detail, add and remove item from the cart, etc.
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.1.4.
 
-## Development server
+## Installation
+Install dependencies
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+  ```
+  npm install
+  ```
+  
+## How to use
+### Run application
+1. Run `ng serve` for starting the application server
+2. Navigate to `http://localhost:4200/`
+
 
 ## Code scaffolding
 
