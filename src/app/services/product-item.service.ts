@@ -5,7 +5,7 @@ import { product } from '../model/product';
   providedIn: 'root'
 })
 export class ProductItemService {
-  selectedProduct: product = {id: 0, name: '', price: 0, url: '', description: ''}
+  private selectedProduct: product = {id: 0, name: '', price: 0, url: '', description: ''}
 
   constructor() { }
 

@@ -5,6 +5,7 @@ img {
   
   .form-margin {
     margin-bottom: 12px;
+    width: 400px;
   }
   
   .cart-item {
@@ -22,7 +23,7 @@ img {
   }
   
   .number-input {
-    width: 80px;
+    width: 50px;
     text-align: center;
   }
   

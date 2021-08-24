@@ -5,16 +5,16 @@ import { product } from '../model/product';
   providedIn: 'root'
 })
 export class CartService {
-  cart: { [productId: number] : number} = {}
+  private cart: { [productId: number] : {productInfo: product, amount: number}} = {}
 
   constructor() { }
 
-  addCart(productId: number, quantity: number){
+  addCart(productId: number, product: product, quantity: number){
     if(productId in this.cart){
-      this.cart[productId] += quantity
+      this.cart[productId].amount += quantity
     }
     else{
-      this.cart[productId] = quantity
+      this.cart[productId] = {productInfo: product, amount: quantity}
     }
   }
 

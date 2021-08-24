@@ -12,6 +12,7 @@ import { ProductItemComponent } from './component/product-item/product-item.comp
 import { ProductItemDetailComponent } from './component/product-item-detail/product-item-detail.component';
 import { ProductListComponent } from './component/product-list/product-list.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { CommonModule } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
-    NgbModule
+    NgbModule,
+    CommonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
