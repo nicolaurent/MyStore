@@ -10,6 +10,9 @@
         <form class="cart-item">
             Amount: <input class="number-input" type="number" value="{{cart.value.amount}}" (input)="updateTotal($event, cart.value.productInfo.id)">
         </form>
+        <button class="btn btn-primary" (click)="removeItem(cart.value.productInfo.id)">
+            Remove
+        </button>
     </div>
 </div>
 

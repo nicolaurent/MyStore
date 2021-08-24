@@ -37,4 +37,8 @@ export class CartService {
   getPurchaseInfo(): {fullname: string, address: string, total: number}{
     return this.purchaseInfo;
   }
+
+  removeItem(productId: number){
+    delete this.cart[productId];
+  }
 }
