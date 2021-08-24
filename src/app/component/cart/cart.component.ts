@@ -41,7 +41,8 @@ export class CartComponent implements OnInit {
   }
 
   purchase(){
-    // Verify and send customer info 
+    /* Verify and send customer info */
+    
     this.cartService.setPurchaseInfo(this.fullName, this.address, this.totalPrice);
     this.router.navigateByUrl('/confirmation');
   }
