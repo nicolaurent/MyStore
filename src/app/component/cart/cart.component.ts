@@ -1,6 +1,7 @@
 import { Component, OnInit, Pipe, PipeTransform } from '@angular/core';
 import { CartService } from 'src/app/services/cart.service';
 import { product } from 'src/app/model/product';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-cart',
@@ -14,7 +15,7 @@ export class CartComponent implements OnInit {
   address = '';
   creditCardNumber = '';
 
-  constructor(private cartService: CartService) { }
+  constructor(private cartService: CartService, private router: Router) { }
 
   ngOnInit(): void {
     this.cartList = this.cartService.getCart();
@@ -40,7 +41,9 @@ export class CartComponent implements OnInit {
   }
 
   purchase(){
-
+    // Verify and send customer info 
+    this.cartService.setPurchaseInfo(this.fullName, this.address, this.totalPrice);
+    this.router.navigateByUrl('/confirmation');
   }
 
   isCartListEmpty(): boolean{

@@ -6,6 +6,7 @@ import { product } from '../model/product';
 })
 export class CartService {
   private cart: { [productId: number] : {productInfo: product, amount: number}} = {}
+  private purchaseInfo: {fullname: string, address: string, total: number} = {fullname: '', address: '', total: 0}
 
   constructor() { }
 
@@ -20,5 +21,20 @@ export class CartService {
 
   getCart(){
     return this.cart;
+  }
+
+  resetCart(){
+    this.cart = {};
+    this.purchaseInfo = {fullname: '', address: '', total: 0};
+  }
+
+  setPurchaseInfo(fullname: string, address: string, total: number){
+    this.purchaseInfo.fullname = fullname;
+    this.purchaseInfo.address = address;
+    this.purchaseInfo.total = total
+  }
+
+  getPurchaseInfo(): {fullname: string, address: string, total: number}{
+    return this.purchaseInfo;
   }
 }
