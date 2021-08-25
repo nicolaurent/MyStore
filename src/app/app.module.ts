@@ -13,6 +13,10 @@ import { ProductItemDetailComponent } from './component/product-item-detail/prod
 import { ProductListComponent } from './component/product-list/product-list.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { CommonModule } from '@angular/common';
+import {ToastModule} from 'primeng/toast';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {ButtonModule} from 'primeng/button';
+import {ConfirmDialogModule} from 'primeng/confirmdialog';
 
 @NgModule({
   declarations: [
@@ -30,7 +34,11 @@ import { CommonModule } from '@angular/common';
     HttpClientModule,
     FormsModule,
     NgbModule,
-    CommonModule
+    CommonModule,
+    ToastModule,
+    BrowserAnimationsModule,
+    ButtonModule,
+    ConfirmDialogModule
   ],
   providers: [],
   bootstrap: [AppComponent]
