@@ -5,8 +5,8 @@ This application provides user interface for online store application, such as v
 ## Feature list
 - browse and view a list of available products
 - view product information and details
-- add and remove product to the shopping cart
-- complete checkout process
+- add and remove product from the shopping cart
+- complete checkout process and get confirmation message
 
 ## About the project
 
