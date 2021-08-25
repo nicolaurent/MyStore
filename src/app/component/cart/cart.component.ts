@@ -31,15 +31,6 @@ export class CartComponent implements OnInit {
     this.totalPrice = parseFloat(this.totalPrice.toFixed(2));
   }
 
-  updateTotal(event: Event, productId: number){
-    this.cartList[productId].amount = parseInt((event.target as HTMLInputElement).value);
-    if(Number.isNaN(this.cartList[productId].amount) || this.cartList[productId].amount < 0){
-      this.cartList[productId].amount = 0
-    }   
-    
-    this.getTotal();
-  }
-
   purchase(){
     /* Verify and send customer info */
 

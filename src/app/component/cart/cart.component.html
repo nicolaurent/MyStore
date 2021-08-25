@@ -8,7 +8,7 @@
             ${{cart.value.productInfo.price}}
         </div>
         <form class="cart-item">
-            Amount: <input class="number-input" type="number" value="{{cart.value.amount}}" (input)="updateTotal($event, cart.value.productInfo.id)">
+            Amount: <input class="number-input" name="amount" type="number" value="{{cart.value.amount}}" [(ngModel)]="cart.value.amount" (ngModelChange)="getTotal()">
         </form>
         <button class="btn btn-primary" (click)="removeItem(cart.value.productInfo.id)">
             Remove
