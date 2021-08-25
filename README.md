@@ -1,6 +1,14 @@
 # MyStore
 
-This application is able to support online store frontend, such as browsing for products, show product detail, add and remove item from the cart, etc.
+This application provides user interface for online store application, such as view a list of available products to purchase, add them to a shopping cart, and ultimately complete the checkout process.
+
+## Feature list
+- browse and view a list of available products
+- view product information and details
+- add and remove product to the shopping cart
+- complete checkout process
+
+## About the project
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.1.4.
 
